@@ -1,0 +1,17 @@
+<IfModule mod_rewrite.c>
+RewriteEngine On
+
+# 1. Route api/* requests to backend/public/index.php
+RewriteRule ^api/(.*)$ backend/public/index.php [QSA,L]
+
+# 2. If the request is for an existing file or directory, serve it directly
+RewriteCond %{REQUEST_FILENAME} -f [OR]
+RewriteCond %{REQUEST_FILENAME} -d
+RewriteRule ^ - [L]
+
+# 3. Friendly URL for /admin
+RewriteRule ^admin$ admin.html [L]
+
+# 4. Fallback for SPA
+RewriteRule ^ index.html [L]
+</IfModule>

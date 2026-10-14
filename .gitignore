@@ -1,0 +1,15 @@
+# OS and editor files
+.DS_Store
+Thumbs.db
+desktop.ini
+*.log
+
+# Microsoft Office temporary lock files
+~$*.docx
+~$*.doc
+~$*.xlsx
+~$*.pptx
+
+# Local test scratch files
+scratch/
+test_*.tmp
