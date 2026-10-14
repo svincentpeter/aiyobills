@@ -58,7 +58,7 @@ Sistem Pemesanan & Akses Ruangan Komersial Cerdas dengan Integrasi Gateway Pemba
    ```bash
    # Masuk ke folder web server (contoh Laragon):
    cd C:\laragon\www
-   git clone <URL_REPO_GITHUB> aiyobills
+   git clone https://github.com/svincentpeter/aiyobills.git aiyobills
    cd aiyobills
    ```
 
